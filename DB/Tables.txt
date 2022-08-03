@@ -1,0 +1,85 @@
+***********CUSTOMER TABLE***********
+create table customer(
+    cust_id int NOT NULL AUTO_INCREMENT,
+    city varchar(40) NOT NULL,
+    country varchar(40),
+    email varchar(40) not null unique,
+    name varchar(50) NOT NULL,
+    password varchar(30) not null unique,
+    phone_no int not null unique,
+    pincode int not null,
+    plan_package varchar(255),
+    plan_type varchar(255),
+    primary_addressv varchar(255),
+    state varchar(20),
+    h_id int,
+    PRIMARY KEY (cust_id) 
+);
+
+***********HOMEMAKER TABLE***********
+create table homemaker(
+    hm_id int NOT NULL AUTO_INCREMENT,
+    last_name varchar(40) NOT NULL,
+    first_name varchar(40),
+    phone_no int not null unique,
+    email varchar(40) not null unique,
+    password varchar(30) not null unique,
+    PRIMARY KEY (hm_id) 
+);
+
+***********ADDRESS TABLE***********
+create table address(
+    add_id int NOT NULL AUTO_INCREMENT,
+    city varchar(40) NOT NULL,
+    state varchar(40),
+    country varchar(40),
+    pincode int not null,
+    PRIMARY KEY (add_id),
+    foriegn key fk_cust(c_id) references customer(cust_id),
+    foriegn key fk_hm(h_id) references customer(hm_id) 
+);
+
+***********ORDER TABLE***********
+create table order(
+    order_id int NOT NULL AUTO_INCREMENT,
+    status varchar(20),
+    amount int,
+    
+    pincode int not null,
+    PRIMARY KEY (order_id),
+    foriegn key fk_cust(c_id) references customer(cust_id),
+    foriegn key fk_hm(h_id) references customer(hm_id) 
+);
+
+***********ADMIN TABLE***********
+
+create table admin(
+id int NOT NULL AUTO_INCREMENT,
+name varchar(20),
+email varchar(30) unique,
+password varchar(20) NOT NULL,
+phone_no varchar(10) unique,
+PRIMARY KEY (id),
+);
+
+
+
+insert into admin values(default,Deepali,d@gmail.com,1234,1234567891);
+insert into admin values(default,Hammad,h@gmail.com,12345,9876543219);
+
+
+
+insert into customer values (default,"Jabalpur","India","viplavsirsikar22@gmail.com","Viplav Sirsikar","vip@123","9753134689","482002",null,null,"Plot No.13, 
+Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh",null);
+
+insert into customer values (default,"Jabalpur","India","nilkanthsirsikar@gmail.com","Nilkanth Sirsikar","nil@123","9425672390","482002",null,null,"Plot No.13,
+ Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh",null);
+
+
+
+
+
+
+
+
+
