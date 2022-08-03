@@ -73,7 +73,16 @@ insert into customer values (default,"Jabalpur","India","viplavsirsikar22@gmail.
 Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh",null);
 
 insert into customer values (default,"Jabalpur","India","nilkanthsirsikar@gmail.com","Nilkanth Sirsikar","nil@123","9425672390","482002",null,null,"Plot No.13,
- Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh",null);
+Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh",null);
+insert into customer values (default,"Jabalpur","India","abc-1@gmail.com","ABC-1 XYZ","abc@123","9448132390","482002",null,null,"Plot No.13, 
+Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh",null);
+insert into customer values (default,"Mumbai","India","abc-2@gmail.com","ABC-2 XYZ","abc@123","93571390","482002",null,null,"Plot No.13, 
+Chandrika Heritage Colony Lamti, Karmeta","Maharashtra",null);
+insert into customer values (default,"Pune","India","abc-3@gmail.com","ABC-3 XYZ","abc@123","942574610","482002",null,null,"Plot No.13, 
+Chandrika Heritage Colony Lamti, Karmeta","Maharashtra",null);
+insert into customer values (default,"Jabalpur","India","abc-4@gmail.com","ABC-4 XYZ","abc@123","926657613","482002",null,null,"Plot No.13, 
+Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh",null);
+
 
 
 
