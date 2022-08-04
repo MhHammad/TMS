@@ -1,18 +1,18 @@
 ***********CUSTOMER TABLE***********
 create table customer(
     cust_id int NOT NULL AUTO_INCREMENT,
-    city varchar(40) NOT NULL,
-    country varchar(40),
-    email varchar(40) not null unique,
     name varchar(50) NOT NULL,
+    email varchar(40) not null unique,
     password varchar(30) not null unique,
     phone_no int not null unique,
+    city varchar(40) NOT NULL,
     pincode int not null,
-    plan_package varchar(255),
-    plan_type varchar(255),
     primary_addressv varchar(255),
     state varchar(20),
+    country varchar(40),
     h_id int,
+    plan_package varchar(255),
+    plan_type varchar(255),
     PRIMARY KEY (cust_id) 
 );
 
@@ -73,19 +73,19 @@ insert into admin values(default,Hammad,h@gmail.com,12345,9876543219);
 
 
 ***********CUSTOMER DATA***********
-insert into customer values (default,"Jabalpur","India","viplavsirsikar22@gmail.com","Viplav Sirsikar","vip@123","9753134689","482002",null,null,"Plot No.13, 
-Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh",null);
+insert into customer values (default,"Viplav Sirsikar","viplavsirsikar22@gmail.com","vip@123","9753134689","Jabalpur","482002","Plot No.13, 
+Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh","India",null,null,null);
 
-insert into customer values (default,"Jabalpur","India","nilkanthsirsikar@gmail.com","Nilkanth Sirsikar","nil@123","9425672390","482002",null,null,"Plot No.13,
-Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh",null);
-insert into customer values (default,"Jabalpur","India","abc-1@gmail.com","ABC-1 XYZ","abc@123","9448132390","482002",null,null,"Plot No.13, 
-Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh",null);
-insert into customer values (default,"Mumbai","India","abc-2@gmail.com","ABC-2 XYZ","abc@123","93571390","482002",null,null,"Plot No.13, 
-Chandrika Heritage Colony Lamti, Karmeta","Maharashtra",null);
-insert into customer values (default,"Pune","India","abc-3@gmail.com","ABC-3 XYZ","abc@123","942574610","482002",null,null,"Plot No.13, 
-Chandrika Heritage Colony Lamti, Karmeta","Maharashtra",null);
-insert into customer values (default,"Jabalpur","India","abc-4@gmail.com","ABC-4 XYZ","abc@123","926657613","482002",null,null,"Plot No.13, 
-Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh",null);
+insert into customer values (default,"Nilkanth Sirsikar","nilkanthsirsikar@gmail.com","nil@123","9425672390","Jabalpur","482002","Plot No.13,
+Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh","India",null,null,null);
+insert into customer values (default,"ABC-1 XYZ","abc-1@gmail.com","abc@123","9448132390","Jabalpur","482002","Plot No.13, 
+Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh","India",null,null,null);
+insert into customer values (default,"ABC-2 XYZ","abc-2@gmail.com","abc@123","93571390","Mumbai","482002","Plot No.13, 
+Chandrika Heritage Colony Lamti, Karmeta","Maharashtra","India",null,null,null);
+insert into customer values (default,"ABC-3 XYZ","abc-3@gmail.com","abc@123","942574610","Pune","482002","Plot No.13, 
+Chandrika Heritage Colony Lamti, Karmeta","Maharashtra","India",null,null,null);
+insert into customer values (default,"ABC-4 XYZ","abc-4@gmail.com","abc@123","926657613","Jabalpur","482002","Plot No.13, 
+Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh","India",null,null,null);
 
 
 ***********HOMEMAKER DATA***********
