@@ -3,8 +3,8 @@ create table customer(
     cust_id int NOT NULL AUTO_INCREMENT,
     name varchar(50) NOT NULL,
     email varchar(40) not null unique,
-    password varchar(30) not null unique,
-    phone_no int not null unique,
+    password varchar(30) not null,
+    phone_no varchar(10) not null unique,
     city varchar(40) NOT NULL,
     pincode int not null,
     primary_addressv varchar(255),
@@ -17,12 +17,12 @@ create table customer(
 );
 
 ***********HOMEMAKER TABLE***********
-create table homemaker(
+create table home_maker(
 hm_id int NOT NULL AUTO_INCREMENT,
 name varchar(40) NOT NULL,
 email varchar(40) not null unique,
-password varchar(30) not null unique,
-phone_no int not null unique,
+password varchar(30) not null,
+phone_no varchar(10) not null unique,
 primary_address varchar(40),
 city varchar(80) NOT NULL,
 state varchar(30),
@@ -63,13 +63,13 @@ name varchar(20),
 email varchar(30) unique,
 password varchar(20) NOT NULL,
 phone_no varchar(10) unique,
-PRIMARY KEY (id),
+PRIMARY KEY (id)
 );
 
 
 ***********ADMIN DATA***********
-insert into admin values(default,Deepali,d@gmail.com,1234,1234567891);
-insert into admin values(default,Hammad,h@gmail.com,12345,9876543219);
+insert into admin values(default,"Deepali","d@gmail.com",1234,1234567891);
+insert into admin values(default,"Hammad","h@gmail.com",12345,9876543219);
 
 
 ***********CUSTOMER DATA***********
@@ -87,11 +87,10 @@ Chandrika Heritage Colony Lamti, Karmeta","Maharashtra","India",null,null,null);
 insert into customer values (default,"ABC-4 XYZ","abc-4@gmail.com","abc@123","926657613","Jabalpur","482002","Plot No.13, 
 Chandrika Heritage Colony Lamti, Karmeta","Madhya Pradesh","India",null,null,null);
 
-
 ***********HOMEMAKER DATA***********
-insert into home_maker values (default,"ABC-5 XYZ","abc-5@gmail.com","abc@123","874634390","Plot No.13, Chandrika Heritage Colony Lamti, Karmeta","Pune","Maharashtra","482002","India");
-insert into home_maker values (default,"ABC-6 XYZ","abc-6@gmail.com","abc@123","725475390","Plot No.14, Chandrika Heritage Colony Lamti, Karmeta","Mumbai","Maharashtra","482003","India");
-insert into home_maker values (default,"ABC-7 XYZ","abc-7@gmail.com","abc@123","9185381538","Plot No.15, Chandrika Heritage Colony Lamti, Karmeta","Indore","Bhopal","482004","India");
-insert into home_maker values (default,"ABC-8 XYZ","abc-8@gmail.com","abc@123","9815656715","Plot No.16, Chandrika Heritage Colony Lamti, Karmeta","Delhi","New Delhi","482005","India");
-insert into home_maker values (default,"ABC-9 XYZ","abc-9@gmail.com","abc@123","9765712711","Plot No.17, Chandrika Heritage Colony Lamti, Karmeta","Nashik","Maharashtra","482006","India");
-insert into home_maker values (default,"ABC-10 XYZ","abc-10@gmail.com","abc@123","7817186528","Plot No.18, Chandrika Heritage Colony Lamti, Karmeta","Pune","Maharashtra","482007","India");
+insert into home_maker values (default,"ABC-5 XYZ","abc-5@gmail.com","abc@123","874634390","A13, Heritage Colony, Karmeta","Pune","Maharashtra","482002","India");
+insert into home_maker values (default,"ABC-6 XYZ","abc-6@gmail.com","abc@123","725475390","A14, Heritage Colony, Karmeta","Mumbai","Maharashtra","482003","India");
+insert into home_maker values (default,"ABC-7 XYZ","abc-7@gmail.com","abc@123","9185381538","A15, Heritage Colony, Karmeta","Indore","Bhopal","482004","India");
+insert into home_maker values (default,"ABC-8 XYZ","abc-8@gmail.com","abc@123","9815656715","A16, Heritage Colony, Karmeta","Delhi","New Delhi","482005","India");
+insert into home_maker values (default,"ABC-9 XYZ","abc-9@gmail.com","abc@123","9765712711","A17, Heritage Colony, Karmeta","Nashik","Maharashtra","482006","India");
+insert into home_maker values (default,"ABC-10 XYZ","abc-10@gmail.com","abc@123","7817186528","A18, Heritage Colony, Karmeta","Pune","Maharashtra","482007","India");
