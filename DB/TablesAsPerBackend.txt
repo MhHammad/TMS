@@ -1,0 +1,158 @@
+insert into home_maker values (default,
+"Pune",
+"hm@1",
+"India",
+"hm1@gmail.com",
+"HM1",
+"hm1@gmail.com",
+"874634390",
+"482002",
+"H1, Heritage Colony, Karmeta",
+"Maharashtra"
+);
+
+insert into home_maker values (default,
+"Mumbai",
+"hm@2",
+"India",
+"hm2@gmail.com",
+"HM2",
+"hm2@gmail.com",
+"874634162",
+"482092",
+"H2, Heritage Colony, Karmeta",
+"Maharashtra"
+);
+
+insert into customer values (default,
+"Nagpur",
+"cst@1",
+"India",
+"cst1@gmail.com",
+"CST1",
+"cst@1",
+"7776152438",
+"482321",
+"CLASSIC",
+"VEG",
+"C1, Heritage Colony, Karmeta",
+"Maharashtra",
+1
+);
+
+insert into customer values (default,
+"Mumbai",
+"cst@2",
+"India",
+"cst2@gmail.com",
+"CST2",
+"cst@2",
+"9997855624",
+"482092",
+"JUMBO",
+"NON_VEG",
+"C2, Heritage Colony, Karmeta",
+"Maharashtra",
+1
+);
+
+insert into customer values (default,
+"Mumbai",
+"cst@3",
+"India",
+"cst3@gmail.com",
+"CST3",
+"cst@3",
+"9990085624",
+"482092",
+"MINI",
+"NON_VEG",
+"C3, Heritage Colony, Karmeta",
+"Maharashtra",
+2
+);
+
+insert into customer values (default,
+"Nagpur",
+"cst@4",
+"India",
+"cst4@gmail.com",
+"CST4",
+"cst@4",
+"7770032438",
+"482321",
+"CLASSIC",
+"VEG",
+"C4, Heritage Colony, Karmeta",
+"Maharashtra",
+2
+);
+
+insert into admin values(default,
+"9719786231",
+"dv@123",
+"dv@gmail.com",
+"Deepali Vyas",
+"dv@123",
+"7772851335");
+
+insert into admin values(default,
+"9719244399",
+"mh@123",
+"mh@gmail.com",
+"Mohd Hammad",
+"mh@123",
+"8447109979");
+
+
+
+
+
+insert into menu values(
+1,"MONDAY","Daal Roti",50);
+
+insert into menu values(
+1,"TUESDAY","Mix veg",50);
+
+insert into menu values(
+1,"WEDNESDAY","Fried Rice",60);
+
+insert into menu values(
+1,"THURSDAY","Kadhi",70);
+
+insert into menu values(
+1,"FRIDAY","Bhindi Roti",50);
+
+insert into menu values(
+1,"SATURDAY","Dal Makhani",80);
+
+insert into menu values(
+1,"SUNDAY","Biryani",120);
+
+insert into menu values(
+2,"MONDAY","Daal Roti",50);
+
+insert into menu values(
+2,"TUESDAY","Mix veg",50);
+
+insert into menu values(
+2,"WEDNESDAY","Fried Rice",60);
+
+insert into menu values(
+2,"THURSDAY","Kadhi",70);
+
+insert into menu values(
+2,"FRIDAY","Bhindi Roti",50);
+
+insert into menu values(
+2,"SATURDAY","Dal Makhani",80);
+
+insert into menu values(
+2,"SUNDAY","Biryani",120);
+
+
+
+
+
+Hibernate: select customer0_.id as id1_0_, customer0_.city as city2_0_, customer0_.confirm_password as confirm_3_0_, customer0_.country as country4_0_, customer0_.email as email5_0_, customer0_.h_id as h_id13_0_, customer0_.name as name6_0_, customer0_.password as password7_0_, customer0_.phone_no as phone_no8_0_, customer0_.pincode as pincode9_0_, customer0_.plan_package as plan_pa10_0_, customer0_.primary_address as primary11_0_, customer0_.state as state12_0_ from customer customer0_
+[2m2022-09-09 01:45:50.409[0;39m [33m WARN[0;39m [35m1812[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: could not initialize proxy [com.app.pojos.HomeMaker#1] - no Session; nested exception is com.fasterxml.jackson.databind.JsonMappingException: could not initialize proxy [com.app.pojos.HomeMaker#1] - no Session (through reference chain: java.util.ArrayList[0]->com.app.pojos.Customer["homeMaker"]->com.app.pojos.HomeMaker$HibernateProxy$eRUDrRsm["name"])]

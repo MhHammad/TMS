@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "0d9ad19a-b394-419c-843a-7e8af04fc668",
+		"name": "TMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all homemakers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/homemakers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"homemakers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get HM by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/homemakers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"homemakers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update homemaker details",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"HM2\",\r\n    \"email\": \"hm2@gmail.com\",\r\n    \"password\": \"hm@2\",\r\n    \"confirmPassword\": \"hm@2\",\r\n    \"phoneNo\": \"8746341620\",\r\n    \"city\": \"Mumbai\",\r\n    \"pincode\": \"482092\",\r\n    \"primaryAddress\": \"H2, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/homemakers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"homemakers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save homemaker details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"HM3\",\r\n    \"email\": \"hm3@gmail.com\",\r\n    \"password\": \"hm@3\",\r\n    \"confirmPassword\": \"hm@3\",\r\n    \"phoneNo\": \"8746366942\",\r\n    \"city\": \"Mumbai\",\r\n    \"pincode\": \"482092\",\r\n    \"primaryAddress\": \"H3, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/homemakers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"homemakers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get customer details by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/customers/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save customer details",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"CST5\",\r\n    \"email\": \"cst5@gmail.com\",\r\n    \"password\": \"cst@5\",\r\n    \"confirmPassword\": \"cst@5\",\r\n    \"phoneNo\": \"8800269954\",\r\n    \"city\": \"Nagpur\",\r\n    \"pincode\": \"482312\",\r\n    \"primaryAddress\": \"C5, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\",\r\n    \"planPackage\": \"JUMBO\",\r\n    \"planType\": \"VEG\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update customer details",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 6,\r\n    \"name\": \"CST6\",\r\n    \"email\": \"cst6@gmail.com\",\r\n    \"password\": \"cst@6\",\r\n    \"confirmPassword\": \"cst@6\",\r\n    \"phoneNo\": \"8800269954\",\r\n    \"city\": \"Nagpur\",\r\n    \"pincode\": \"482312\",\r\n    \"primaryAddress\": \"C6, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\",\r\n    \"planPackage\": \"JUMBO\",\r\n    \"planType\": \"VEG\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
