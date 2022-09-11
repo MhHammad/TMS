@@ -31,7 +31,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/homemakers/1",
+					"raw": "http://localhost:8080/api/homemakers/4",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -40,7 +40,7 @@
 					"path": [
 						"api",
 						"homemakers",
-						"1"
+						"4"
 					]
 				}
 			},
@@ -53,7 +53,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 2,\r\n    \"name\": \"HM2\",\r\n    \"email\": \"hm2@gmail.com\",\r\n    \"password\": \"hm@2\",\r\n    \"confirmPassword\": \"hm@2\",\r\n    \"phoneNo\": \"8746341620\",\r\n    \"city\": \"Mumbai\",\r\n    \"pincode\": \"482092\",\r\n    \"primaryAddress\": \"H2, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\"\r\n}",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"HM4\",\r\n    \"email\": \"hm4@gmail.com\",\r\n    \"password\": \"hm@4\",\r\n    \"confirmPassword\": \"hm@4\",\r\n    \"phoneNo\": \"9997995482\",\r\n    \"city\": \"Pune\",\r\n    \"pincode\": \"482002\",\r\n    \"primaryAddress\": \"H4, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -198,6 +198,75 @@
 					"path": [
 						"api",
 						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authenticate customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/customers/login/cst3@gmail.com/cst@3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"login",
+						"cst3@gmail.com",
+						"cst@3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authenticate homemaker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/homemakers/login/hm2@gmail.com/hm@2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"homemakers",
+						"login",
+						"hm2@gmail.com",
+						"hm@2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authenticate Admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/myapp/admins/login/dv@gmail.com/dv@123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myapp",
+						"admins",
+						"login",
+						"dv@gmail.com",
+						"dv@123"
 					]
 				}
 			},
