@@ -31,7 +31,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/homemakers/4",
+					"raw": "http://localhost:8080/api/homemakers/40",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -40,7 +40,7 @@
 					"path": [
 						"api",
 						"homemakers",
-						"4"
+						"40"
 					]
 				}
 			},
@@ -130,7 +130,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/customers/3",
+					"raw": "http://localhost:8080/api/customers/6",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -139,7 +139,7 @@
 					"path": [
 						"api",
 						"customers",
-						"3"
+						"6"
 					]
 				}
 			},
@@ -152,7 +152,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"CST5\",\r\n    \"email\": \"cst5@gmail.com\",\r\n    \"password\": \"cst@5\",\r\n    \"confirmPassword\": \"cst@5\",\r\n    \"phoneNo\": \"8800269954\",\r\n    \"city\": \"Nagpur\",\r\n    \"pincode\": \"482312\",\r\n    \"primaryAddress\": \"C5, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\",\r\n    \"planPackage\": \"JUMBO\",\r\n    \"planType\": \"VEG\"\r\n}",
+					"raw": "{\r\n    \"name\": \"CST7\",\r\n    \"email\": \"cst7@gmail.com\",\r\n    \"password\": \"cst@7\",\r\n    \"confirmPassword\": \"cst@7\",\r\n    \"phoneNo\": \"9837566253\",\r\n    \"city\": \"Indore\",\r\n    \"pincode\": \"229761\",\r\n    \"primaryAddress\": \"C7, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\",\r\n    \"planPackage\": \"CLASSIC\",\r\n    \"planType\": \"VEG\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -181,7 +181,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\": 6,\r\n    \"name\": \"CST6\",\r\n    \"email\": \"cst6@gmail.com\",\r\n    \"password\": \"cst@6\",\r\n    \"confirmPassword\": \"cst@6\",\r\n    \"phoneNo\": \"8800269954\",\r\n    \"city\": \"Nagpur\",\r\n    \"pincode\": \"482312\",\r\n    \"primaryAddress\": \"C6, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\",\r\n    \"planPackage\": \"JUMBO\",\r\n    \"planType\": \"VEG\"\r\n}",
+					"raw": "{\r\n    \"id\": 6,\r\n    \"name\": \"CST6\",\r\n    \"email\": \"cst6@gmail.com\",\r\n    \"password\": \"cst@6\",\r\n    \"confirmPassword\": \"cst@6\",\r\n    \"phoneNo\": \"8800269954\",\r\n    \"city\": \"Nagpur\",\r\n    \"pincode\": \"482312\",\r\n    \"primaryAddress\": \"C6, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\",\r\n    \"planPackage\": \"JUMBO\",\r\n    \"planType\": \"NON_VEG\",\r\n    \"homeMaker\": {\r\n        \"id\": 1,\r\n        \"name\": \"HM1\",\r\n        \"email\": \"hm1@gmail.com\",\r\n        \"password\": \"hm@1\",\r\n        \"confirmPassword\": \"hm@1\",\r\n        \"phoneNo\": \"8746343290\",\r\n        \"city\": \"Pune\",\r\n        \"pincode\": \"482002\",\r\n        \"primaryAddress\": \"H1, Heritage Colony, Karmeta\",\r\n        \"state\": \"Maharashtra\",\r\n        \"country\": \"India\"\r\n    }\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -209,7 +209,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/customers/login/cst3@gmail.com/cst@3",
+					"raw": "http://localhost:8080/api/customers/login/cst7@gmail.com/cst@7.",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -219,8 +219,8 @@
 						"api",
 						"customers",
 						"login",
-						"cst3@gmail.com",
-						"cst@3"
+						"cst7@gmail.com",
+						"cst@7."
 					]
 				}
 			},
@@ -232,7 +232,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/api/homemakers/login/hm2@gmail.com/hm@2",
+					"raw": "http://localhost:8080/api/homemakers/login/hm2@gmail.com/hm@2.",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -243,7 +243,7 @@
 						"homemakers",
 						"login",
 						"hm2@gmail.com",
-						"hm@2"
+						"hm@2."
 					]
 				}
 			},
@@ -255,7 +255,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/myapp/admins/login/dv@gmail.com/dv@123",
+					"raw": "http://localhost:8080/myapp/admins/login/dv@gmail.com/dv@123.",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -266,7 +266,60 @@
 						"admins",
 						"login",
 						"dv@gmail.com",
-						"dv@123"
+						"dv@123."
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new customer signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"CST8\",\r\n    \"email\": \"cst8@gmail.com\",\r\n    \"password\": \"cst@8\",\r\n    \"confirmPassword\": \"cst@8\",\r\n    \"phoneNo\": \"8865063922\",\r\n    \"city\": \"Indore\",\r\n    \"pincode\": \"229761\",\r\n    \"primaryAddress\": \"C8, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\",\r\n    \"planPackage\": \"MINI\",\r\n    \"planType\": \"VEG\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/customers/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add my homemaker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/customers/add-homemaker/2/70",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"customers",
+						"add-homemaker",
+						"2",
+						"70"
 					]
 				}
 			},
