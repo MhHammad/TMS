@@ -6,324 +6,436 @@
 	},
 	"item": [
 		{
-			"name": "get all homemakers",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/homemakers",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"homemakers"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "get HM by Id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/homemakers/40",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"homemakers",
-						"40"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "update homemaker details",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"HM4\",\r\n    \"email\": \"hm4@gmail.com\",\r\n    \"password\": \"hm@4\",\r\n    \"confirmPassword\": \"hm@4\",\r\n    \"phoneNo\": \"9997995482\",\r\n    \"city\": \"Pune\",\r\n    \"pincode\": \"482002\",\r\n    \"primaryAddress\": \"H4, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "Homemaker",
+			"item": [
+				{
+					"name": "get all homemakers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/homemakers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"homemakers"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:8080/api/homemakers",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"homemakers"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "save homemaker details",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"HM3\",\r\n    \"email\": \"hm3@gmail.com\",\r\n    \"password\": \"hm@3\",\r\n    \"confirmPassword\": \"hm@3\",\r\n    \"phoneNo\": \"8746366942\",\r\n    \"city\": \"Mumbai\",\r\n    \"pincode\": \"482092\",\r\n    \"primaryAddress\": \"H3, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "get HM by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/homemakers/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"homemakers",
+								"4"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:8080/api/homemakers",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"homemakers"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "get all customers",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/customers",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"customers"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "get customer details by Id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/customers/6",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"customers",
-						"6"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "save customer details",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"CST7\",\r\n    \"email\": \"cst7@gmail.com\",\r\n    \"password\": \"cst@7\",\r\n    \"confirmPassword\": \"cst@7\",\r\n    \"phoneNo\": \"9837566253\",\r\n    \"city\": \"Indore\",\r\n    \"pincode\": \"229761\",\r\n    \"primaryAddress\": \"C7, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\",\r\n    \"planPackage\": \"CLASSIC\",\r\n    \"planType\": \"VEG\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "update homemaker details",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"name\": \"HM4\",\r\n    \"email\": \"hm4@gmail.com\",\r\n    \"password\": \"hm@4\",\r\n    \"confirmPassword\": \"hm@4\",\r\n    \"phoneNo\": \"9997995482\",\r\n    \"city\": \"Pune\",\r\n    \"pincode\": \"482002\",\r\n    \"primaryAddress\": \"H4, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/homemakers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"homemakers"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:8080/api/customers",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"customers"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "update customer details",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\": 6,\r\n    \"name\": \"CST6\",\r\n    \"email\": \"cst6@gmail.com\",\r\n    \"password\": \"cst@6\",\r\n    \"confirmPassword\": \"cst@6\",\r\n    \"phoneNo\": \"8800269954\",\r\n    \"city\": \"Nagpur\",\r\n    \"pincode\": \"482312\",\r\n    \"primaryAddress\": \"C6, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\",\r\n    \"planPackage\": \"JUMBO\",\r\n    \"planType\": \"NON_VEG\",\r\n    \"homeMaker\": {\r\n        \"id\": 1,\r\n        \"name\": \"HM1\",\r\n        \"email\": \"hm1@gmail.com\",\r\n        \"password\": \"hm@1\",\r\n        \"confirmPassword\": \"hm@1\",\r\n        \"phoneNo\": \"8746343290\",\r\n        \"city\": \"Pune\",\r\n        \"pincode\": \"482002\",\r\n        \"primaryAddress\": \"H1, Heritage Colony, Karmeta\",\r\n        \"state\": \"Maharashtra\",\r\n        \"country\": \"India\"\r\n    }\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "authenticate homemaker",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/homemakers/login/hm2@gmail.com/hm@2.",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"homemakers",
+								"login",
+								"hm2@gmail.com",
+								"hm@2."
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:8080/api/customers",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"customers"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "authenticate customer",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/customers/login/cst7@gmail.com/cst@7.",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"customers",
-						"login",
-						"cst7@gmail.com",
-						"cst@7."
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "authenticate homemaker",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/homemakers/login/hm2@gmail.com/hm@2.",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"homemakers",
-						"login",
-						"hm2@gmail.com",
-						"hm@2."
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "authenticate Admin",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/myapp/admins/login/dv@gmail.com/dv@123.",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"myapp",
-						"admins",
-						"login",
-						"dv@gmail.com",
-						"dv@123."
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "new customer signup",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"CST8\",\r\n    \"email\": \"cst8@gmail.com\",\r\n    \"password\": \"cst@8\",\r\n    \"confirmPassword\": \"cst@8\",\r\n    \"phoneNo\": \"8865063922\",\r\n    \"city\": \"Indore\",\r\n    \"pincode\": \"229761\",\r\n    \"primaryAddress\": \"C8, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\",\r\n    \"planPackage\": \"MINI\",\r\n    \"planType\": \"VEG\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "save homemaker details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"HM3\",\r\n    \"email\": \"hm3@gmail.com\",\r\n    \"password\": \"hm@3\",\r\n    \"confirmPassword\": \"hm@3\",\r\n    \"phoneNo\": \"8746366942\",\r\n    \"city\": \"Mumbai\",\r\n    \"pincode\": \"482092\",\r\n    \"primaryAddress\": \"H3, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/homemakers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"homemakers"
+							]
 						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/api/customers/signup",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"customers",
-						"signup"
-					]
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "add my homemaker",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/customers/add-homemaker/2/70",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"customers",
-						"add-homemaker",
-						"2",
-						"70"
-					]
+			"name": "Customer",
+			"item": [
+				{
+					"name": "get all customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get customer details by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/customers/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save customer details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"CST7\",\r\n    \"email\": \"cst7@gmail.com\",\r\n    \"password\": \"cst@7\",\r\n    \"confirmPassword\": \"cst@7\",\r\n    \"phoneNo\": \"9837566253\",\r\n    \"city\": \"Indore\",\r\n    \"pincode\": \"229761\",\r\n    \"primaryAddress\": \"C7, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\",\r\n    \"planPackage\": \"CLASSIC\",\r\n    \"planType\": \"VEG\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update customer details",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"name\": \"CST6\",\r\n    \"email\": \"cst6@gmail.com\",\r\n    \"password\": \"cst@6\",\r\n    \"confirmPassword\": \"cst@6\",\r\n    \"phoneNo\": \"8800269954\",\r\n    \"city\": \"Nagpur\",\r\n    \"pincode\": \"482312\",\r\n    \"primaryAddress\": \"C6, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\",\r\n    \"planPackage\": \"JUMBO\",\r\n    \"planType\": \"NON_VEG\",\r\n    \"homeMaker\": {\r\n        \"id\": 1,\r\n        \"name\": \"HM1\",\r\n        \"email\": \"hm1@gmail.com\",\r\n        \"password\": \"hm@1\",\r\n        \"confirmPassword\": \"hm@1\",\r\n        \"phoneNo\": \"8746343290\",\r\n        \"city\": \"Pune\",\r\n        \"pincode\": \"482002\",\r\n        \"primaryAddress\": \"H1, Heritage Colony, Karmeta\",\r\n        \"state\": \"Maharashtra\",\r\n        \"country\": \"India\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/customers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authenticate customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/customers/login/cst7@gmail.com/cst@7.",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"login",
+								"cst7@gmail.com",
+								"cst@7."
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "new customer signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"CST8\",\r\n    \"email\": \"cst8@gmail.com\",\r\n    \"password\": \"cst@8\",\r\n    \"confirmPassword\": \"cst@8\",\r\n    \"phoneNo\": \"8865063922\",\r\n    \"city\": \"Indore\",\r\n    \"pincode\": \"229761\",\r\n    \"primaryAddress\": \"C8, Heritage Colony, Karmeta\",\r\n    \"state\": \"Maharashtra\",\r\n    \"country\": \"India\",\r\n    \"planPackage\": \"MINI\",\r\n    \"planType\": \"VEG\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/customers/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add my homemaker",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/customers/add-homemaker/8/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"add-homemaker",
+								"8",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get my homeMaker",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/customers/getMyHomeMaker/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"getMyHomeMaker",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove my HomeMaker",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/customers/removeMyHomeMaker/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"removeMyHomeMaker",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Plan and Package",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/customers/updatePackage/VEG/JUMBO",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"updatePackage",
+								"VEG",
+								"JUMBO"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete Customer details",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/customers/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"customers",
+								"7"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "authenticate Admin",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/myapp/admins/login/dv@gmail.com/dv@123.",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"myapp",
+								"admins",
+								"login",
+								"dv@gmail.com",
+								"dv@123."
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
